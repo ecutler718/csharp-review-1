@@ -28,7 +28,7 @@ namespace ContactsInfo
         return View["eraseContact.cshtml"];
       };
       Get["/contactList/{id}"] = parameters => {
-        Contact contact = Contact.find(parameters.id);
+        Contact contact = Contact.Find(parameters.id);
         return View["/.cshtml", contact];
       };
     }
